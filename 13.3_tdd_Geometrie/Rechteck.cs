@@ -51,10 +51,21 @@ namespace _13._3_tdd_Geometrie
             breite = Convert.ToInt32(breite * faktor);
             hoehe = Convert.ToInt32(hoehe * faktor);
         }
+
         public int Umfang()
         {
             return 2 * (breite + hoehe);
         }
 
+        public int Flaeche()
+        {
+            return breite * hoehe;
+        }
+
+        public Rechteck(int breite, int hoehe)
+        {
+            this.Breite = breite;
+            this.Hoehe = hoehe;
+        }
     }
 }
